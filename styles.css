@@ -310,6 +310,12 @@ header {
   margin: 0 auto;
   border: 6px solid var(--cream-card);
   box-shadow: 0 10px 30px rgba(143, 23, 48, 0.18);
+  overflow: hidden;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ---------- Events ---------- */
