@@ -149,6 +149,7 @@ header {
 .nav-links a:hover { color: var(--red); }
 
 .nav-cta { display: flex; align-items: center; gap: 18px; flex-shrink: 0; }
+.nav-cta .btn { gap: 0; }
 
 .nav-toggle {
   display: none;
