@@ -185,8 +185,6 @@ header {
   .hero-art { order: -1; max-width: 320px; margin: 0 auto; }
 }
 
-.hero h1 span.script { display: block; font-size: clamp(2.2rem, 5vw, 3.2rem); }
-
 .hero-sub {
   font-size: 1.15rem;
   max-width: 460px;
