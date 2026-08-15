@@ -440,6 +440,63 @@ blockquote.testimonial cite {
   font-size: 0.85em;
 }
 
+/* ---------- FAQ ---------- */
+.faq-list {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.faq-item {
+  background: var(--cream-card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 4px 24px;
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 20px 0;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+
+.faq-item summary::after {
+  content: "+";
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--cream-soft);
+  color: var(--red);
+  font-size: 1.2rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.faq-item[open] summary { color: var(--red); }
+.faq-item[open] summary::after { content: "−"; background: var(--red); color: #fff; }
+
+.faq-item p {
+  margin: 0;
+  padding-bottom: 22px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
 /* ---------- Contact ---------- */
 .contact {
   text-align: center;
