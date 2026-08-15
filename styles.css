@@ -311,17 +311,6 @@ header {
   box-shadow: 0 10px 30px rgba(143, 23, 48, 0.18);
 }
 
-.editable-note {
-  display: inline-block;
-  margin-top: 14px;
-  font-size: 0.8rem;
-  color: var(--red-dark);
-  background: #fff3e0;
-  border: 1px dashed var(--red);
-  padding: 6px 12px;
-  border-radius: 8px;
-}
-
 /* ---------- Events ---------- */
 .event-grid {
   display: grid;
