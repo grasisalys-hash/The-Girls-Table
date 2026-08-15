@@ -423,15 +423,21 @@ blockquote.testimonial cite {
 .upcoming-info h3 { margin-bottom: 4px; }
 .upcoming-info .meta { font-size: 0.85rem; color: var(--ink-soft); }
 .upcoming-info .venue-pending {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   margin-top: 6px;
   font-size: 0.78rem;
   font-weight: 600;
   color: var(--red-dark);
-  background: #fff3e0;
-  border: 1px dashed var(--red);
+  background: var(--cream-soft);
+  border: 1px solid var(--line);
   padding: 3px 10px;
   border-radius: 999px;
+}
+.upcoming-info .venue-pending::before {
+  content: "🤫";
+  font-size: 0.85em;
 }
 
 /* ---------- Contact ---------- */
