@@ -109,7 +109,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(242, 230, 216, 0.9);
+  background: rgba(237, 225, 216, 0.92);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
 }
@@ -197,7 +197,7 @@ header {
 .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; }
 @media (max-width: 900px) { .hero-cta { justify-content: center; } }
 
-.hero-art svg { width: 100%; height: auto; }
+.hero-art img { width: 100%; height: auto; }
 
 /* ---------- Concept ---------- */
 .concept-grid {
@@ -451,4 +451,8 @@ footer {
   font-size: 0.85rem;
   color: var(--ink-soft);
 }
-footer .script { font-size: 1.1rem; }
+.footer-logo {
+  height: 72px;
+  width: auto;
+  margin-bottom: 12px;
+}
