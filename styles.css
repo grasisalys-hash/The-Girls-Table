@@ -1,13 +1,13 @@
 /* ---------- Tokens ---------- */
 :root {
-  --cream: #f2e6d8;
-  --cream-soft: #f8f0e6;
-  --cream-card: #fffaf3;
-  --red: #c11f3d;
-  --red-dark: #8f1730;
+  --cream: #ede1d8;
+  --cream-soft: #f4ece4;
+  --cream-card: #faf5ef;
+  --red: #cb102c;
+  --red-dark: #970c20;
   --ink: #2a1a1a;
   --ink-soft: #5a4640;
-  --line: #e3cdb8;
+  --line: #ddccbc;
   --max: 1120px;
 }
 
@@ -25,7 +25,7 @@ body {
 
 h1, h2, h3 {
   font-family: 'Fraunces', 'Georgia', serif;
-  font-weight: 700;
+  font-weight: 900;
   color: var(--red);
   margin: 0 0 0.4em;
   letter-spacing: -0.01em;
@@ -124,7 +124,7 @@ header {
 }
 .logo {
   font-family: 'Fraunces', serif;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 1.35rem;
   color: var(--red);
   text-decoration: none;
@@ -239,11 +239,10 @@ header {
 /* ---------- How it works ---------- */
 .steps {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   gap: 20px;
   counter-reset: step;
 }
-@media (max-width: 900px) { .steps { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .steps { grid-template-columns: 1fr; } }
 
 .step {
