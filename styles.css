@@ -274,9 +274,25 @@ header {
   display: grid;
   grid-template-columns: 0.7fr 1.3fr;
   gap: 48px;
-  align-items: center;
+  align-items: start;
 }
 @media (max-width: 800px) { .about .container { grid-template-columns: 1fr; } }
+
+.about-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 100px;
+}
+@media (max-width: 800px) { .about-photo { position: static; } }
+
+.about-intro {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--ink);
+}
 
 .avatar {
   width: 220px;
