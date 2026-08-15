@@ -454,8 +454,41 @@ blockquote.testimonial cite {
 .contact-box p { color: rgba(255,255,255,0.85); max-width: 520px; margin: 0 auto 26px; }
 .contact-box .btn { background: #fff; color: var(--red); }
 .contact-box .btn:hover { background: var(--cream-soft); }
+.social-row {
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  max-width: 120px;
+  text-align: center;
+}
+.social-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease;
+}
+.social-icon svg { width: 26px; height: 26px; }
+.social-link:hover .social-icon { transform: translateY(-2px); background: var(--cream-soft); }
+
 .contact-details {
-  margin-top: 30px;
+  margin-top: 26px;
   display: flex;
   gap: 26px;
   justify-content: center;
