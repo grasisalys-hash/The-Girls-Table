@@ -635,8 +635,4 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
-  .concept-card.reveal:nth-child(1) { transition-delay: 0s; }
-  .concept-card.reveal:nth-child(2) { transition-delay: 0.08s; }
-  .concept-card.reveal:nth-child(3) { transition-delay: 0.16s; }
-  .concept-card.reveal:nth-child(4) { transition-delay: 0.24s; }
 }
