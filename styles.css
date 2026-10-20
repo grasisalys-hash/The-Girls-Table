@@ -425,10 +425,12 @@ blockquote.testimonial cite {
 
 .upcoming-info h3 { margin-bottom: 4px; }
 .upcoming-info .meta { font-size: 0.85rem; color: var(--ink-soft); }
-.upcoming-info .venue-pending {
+.upcoming-info .venue-pending,
+.upcoming-info .price-badge {
   display: inline-flex;
   align-items: center;
   margin-top: 6px;
+  margin-right: 6px;
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.04em;
