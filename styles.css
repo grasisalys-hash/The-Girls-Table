@@ -628,38 +628,68 @@ footer {
   border-radius: 4px;
 }
 
-/* ---------- Gallery marquee ---------- */
+/* ---------- Gallery carousel ---------- */
 .gallery {
-  overflow: hidden;
-  padding: 0;
+  padding: 60px 0;
   background: var(--cream-soft);
 }
-.gallery-track {
+.carousel {
+  position: relative;
   display: flex;
-  width: max-content;
+  align-items: center;
+  gap: 12px;
+  max-width: 640px;
+  margin: 0 auto;
 }
-.gallery-strip {
+.carousel-track {
   display: flex;
-  gap: 16px;
-  padding: 28px 8px;
-  animation: gallery-scroll 36s linear infinite;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 18px;
+  flex: 1;
+  -webkit-overflow-scrolling: touch;
 }
-.gallery-strip img {
-  height: 280px;
-  width: auto;
-  border-radius: 14px;
+.carousel-track::-webkit-scrollbar { display: none; }
+.carousel-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+}
+.carousel-slide img {
+  width: 100%;
+  height: 420px;
   object-fit: cover;
-  box-shadow: 0 6px 18px rgba(42, 26, 26, 0.12);
+  display: block;
 }
 @media (max-width: 720px) {
-  .gallery-strip img { height: 200px; }
+  .carousel-slide img { height: 320px; }
 }
-@keyframes gallery-scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
+.carousel-arrow {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--cream-card);
+  color: var(--red);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
 }
-@media (prefers-reduced-motion: reduce) {
-  .gallery { overflow-x: auto; }
-  .gallery-strip { animation: none; }
-  .gallery-strip[aria-hidden] { display: none; }
+.carousel-arrow:hover { background: var(--red); color: #fff; }
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
 }
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: var(--line);
+  cursor: pointer;
+}
+.carousel-dot.active { background: var(--red); }
