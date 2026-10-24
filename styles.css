@@ -399,71 +399,10 @@ blockquote.testimonial cite {
 /* ---------- Upcoming ---------- */
 .upcoming { background: var(--cream-soft); border-top: 1px solid var(--line); }
 
-.calendar-wrap { display: none; }
-
 .upcoming-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
-}
-
-@media (min-width: 900px) {
-  .calendar-wrap { display: block; max-width: 900px; margin: 0 auto 36px; }
-
-  .calendar-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 6px;
-  }
-  .calendar-weekday {
-    text-align: center;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--red-dark);
-    padding-bottom: 8px;
-  }
-  .calendar-cell {
-    background: var(--cream-card);
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    min-height: 88px;
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-  .calendar-cell.empty { background: transparent; border-color: transparent; }
-  .calendar-daynum {
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    color: var(--ink);
-    font-size: 0.9rem;
-  }
-  .calendar-event {
-    background: var(--cream-soft);
-    color: var(--red-dark);
-    border: 1px solid var(--line);
-    border-radius: 6px;
-    font-family: inherit;
-    font-size: 0.7rem;
-    font-weight: 600;
-    padding: 4px 6px;
-    text-align: left;
-    line-height: 1.25;
-    cursor: pointer;
-  }
-  .calendar-event:hover { background: var(--cream-card); border-color: var(--red); }
-  .calendar-event.active { background: var(--red); border-color: var(--red); color: #fff; }
-
-  .upcoming-list {
-    display: block;
-    max-width: 520px;
-    margin: 0 auto;
-  }
-  .upcoming-card { display: none; }
-  .upcoming-card.is-selected { display: flex; }
 }
 
 .upcoming-card {
