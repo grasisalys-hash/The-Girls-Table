@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700;900&family=Pinyon+Script&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20261024">
+<link rel="stylesheet" href="styles.css?v=20261024b">
 <script data-goatcounter="https://thegirlstable.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
@@ -215,8 +215,62 @@
         <p>Le lieu — et parfois l'activité — reste secret jusqu'à la confirmation de ta place, qu'on t'envoie en message privé.</p>
       </div>
 
+      <div class="calendar-wrap">
+        <div class="calendar-grid">
+          <div class="calendar-weekday">L</div>
+          <div class="calendar-weekday">M</div>
+          <div class="calendar-weekday">M</div>
+          <div class="calendar-weekday">J</div>
+          <div class="calendar-weekday">V</div>
+          <div class="calendar-weekday">S</div>
+          <div class="calendar-weekday">D</div>
+          <div class="calendar-cell empty"></div>
+          <div class="calendar-cell empty"></div>
+          <div class="calendar-cell empty"></div>
+          <div class="calendar-cell empty"></div>
+          <div class="calendar-cell empty"></div>
+          <div class="calendar-cell empty"></div>
+          <div class="calendar-cell"><span class="calendar-daynum">1</span></div>
+          <div class="calendar-cell"><span class="calendar-daynum">2</span></div>
+          <div class="calendar-cell"><span class="calendar-daynum">3</span><button type="button" class="calendar-event active" data-target="event-03">Girls Dinner</button></div>
+          <div class="calendar-cell"><span class="calendar-daynum">4</span></div>
+          <div class="calendar-cell"><span class="calendar-daynum">5</span></div>
+          <div class="calendar-cell"><span class="calendar-daynum">6</span><button type="button" class="calendar-event" data-target="event-06">Drinks &amp; Girls</button></div>
+          <div class="calendar-cell"><span class="calendar-daynum">7</span><button type="button" class="calendar-event" data-target="event-07">Cardio Dance</button></div>
+          <div class="calendar-cell"><span class="calendar-daynum">8</span><button type="button" class="calendar-event" data-target="event-08">Run &amp; Girls</button></div>
+          <div class="calendar-cell"><span class="calendar-daynum">9</span><button type="button" class="calendar-event" data-target="event-09">Girls Dinner</button></div>
+          <div class="calendar-cell"><span class="calendar-daynum">10</span></div>
+          <div class="calendar-cell"><span class="calendar-daynum">11</span></div>
+          <div class="calendar-cell"><span class="calendar-daynum">12</span><button type="button" class="calendar-event" data-target="event-12">Apéro Crochet</button></div>
+          <div class="calendar-cell"><span class="calendar-daynum">13</span></div>
+          <div class="calendar-cell"><span class="calendar-daynum">14</span></div>
+          <div class="calendar-cell"><span class="calendar-daynum">15</span></div>
+          <div class="calendar-cell"><span class="calendar-daynum">16</span></div>
+          <div class="calendar-cell"><span class="calendar-daynum">17</span></div>
+          <div class="calendar-cell"><span class="calendar-daynum">18</span></div>
+          <div class="calendar-cell"><span class="calendar-daynum">19</span></div>
+          <div class="calendar-cell"><span class="calendar-daynum">20</span></div>
+          <div class="calendar-cell"><span class="calendar-daynum">21</span></div>
+          <div class="calendar-cell"><span class="calendar-daynum">22</span></div>
+          <div class="calendar-cell"><span class="calendar-daynum">23</span></div>
+          <div class="calendar-cell"><span class="calendar-daynum">24</span></div>
+          <div class="calendar-cell"><span class="calendar-daynum">25</span></div>
+          <div class="calendar-cell"><span class="calendar-daynum">26</span><button type="button" class="calendar-event" data-target="event-26">Activité surprise</button></div>
+          <div class="calendar-cell"><span class="calendar-daynum">27</span><button type="button" class="calendar-event" data-target="event-27">Back To The Girls Table</button></div>
+          <div class="calendar-cell"><span class="calendar-daynum">28</span><button type="button" class="calendar-event" data-target="event-28">Hot Pilates</button></div>
+          <div class="calendar-cell"><span class="calendar-daynum">29</span><button type="button" class="calendar-event" data-target="event-29">Run &amp; Girls</button></div>
+          <div class="calendar-cell"><span class="calendar-daynum">30</span></div>
+          <div class="calendar-cell empty"></div>
+          <div class="calendar-cell empty"></div>
+          <div class="calendar-cell empty"></div>
+          <div class="calendar-cell empty"></div>
+          <div class="calendar-cell empty"></div>
+          <div class="calendar-cell empty"></div>
+        </div>
+      </div>
+
       <div class="upcoming-list">
-        <div class="upcoming-card reveal">
+        <div class="upcoming-card reveal is-selected" id="event-03">
           <div class="upcoming-date"><span class="day">03</span><span class="month">nov</span></div>
           <div class="upcoming-info">
             <h3>Girls Dinner</h3>
@@ -226,7 +280,7 @@
           </div>
           <a href="https://ig.me/m/thegirlstableparis" class="btn btn-soft" target="_blank" rel="noopener">Je veux venir</a>
         </div>
-        <div class="upcoming-card reveal">
+        <div class="upcoming-card reveal" id="event-06">
           <div class="upcoming-date"><span class="day">06</span><span class="month">nov</span></div>
           <div class="upcoming-info">
             <h3>Drinks & Girls</h3>
@@ -236,7 +290,7 @@
           </div>
           <a href="https://ig.me/m/thegirlstableparis" class="btn btn-soft" target="_blank" rel="noopener">Je veux venir</a>
         </div>
-        <div class="upcoming-card reveal">
+        <div class="upcoming-card reveal" id="event-07">
           <div class="upcoming-date"><span class="day">07</span><span class="month">nov</span></div>
           <div class="upcoming-info">
             <h3>Cardio Dance chez Club Lulu</h3>
@@ -244,7 +298,7 @@
           </div>
           <a href="https://www.helloasso.com/associations/the-girls-table-paris/evenements/girls-activities-cardio-dance" class="btn btn-soft" target="_blank" rel="noopener">Je veux venir</a>
         </div>
-        <div class="upcoming-card reveal">
+        <div class="upcoming-card reveal" id="event-08">
           <div class="upcoming-date"><span class="day">08</span><span class="month">nov</span></div>
           <div class="upcoming-info">
             <h3>Run & Girls</h3>
@@ -253,7 +307,7 @@
           </div>
           <a href="https://www.helloasso.com/associations/the-girls-table-paris/evenements/run-and-girls-x-olivia-s-pace-2" class="btn btn-soft" target="_blank" rel="noopener">Je veux venir</a>
         </div>
-        <div class="upcoming-card reveal">
+        <div class="upcoming-card reveal" id="event-09">
           <div class="upcoming-date"><span class="day">09</span><span class="month">nov</span></div>
           <div class="upcoming-info">
             <h3>Girls Dinner</h3>
@@ -263,7 +317,7 @@
           </div>
           <a href="https://ig.me/m/thegirlstableparis" class="btn btn-soft" target="_blank" rel="noopener">Je veux venir</a>
         </div>
-        <div class="upcoming-card reveal">
+        <div class="upcoming-card reveal" id="event-12">
           <div class="upcoming-date"><span class="day">12</span><span class="month">nov</span></div>
           <div class="upcoming-info">
             <h3>Apéro Crochet</h3>
@@ -272,7 +326,7 @@
           </div>
           <a href="https://www.helloasso.com/associations/the-girls-table-paris/evenements/girls-activities-cardio-dance-2" class="btn btn-soft" target="_blank" rel="noopener">Je veux venir</a>
         </div>
-        <div class="upcoming-card reveal">
+        <div class="upcoming-card reveal" id="event-26">
           <div class="upcoming-date"><span class="day">26</span><span class="month">nov</span></div>
           <div class="upcoming-info">
             <h3>Activité surprise</h3>
@@ -280,7 +334,7 @@
           </div>
           <a href="https://ig.me/m/thegirlstableparis" class="btn btn-soft" target="_blank" rel="noopener">Je veux venir</a>
         </div>
-        <div class="upcoming-card reveal">
+        <div class="upcoming-card reveal" id="event-27">
           <div class="upcoming-date"><span class="day">27</span><span class="month">nov</span></div>
           <div class="upcoming-info">
             <h3>Soirée Back To The Girls Table</h3>
@@ -289,7 +343,7 @@
           </div>
           <a href="https://ig.me/m/thegirlstableparis" class="btn btn-soft" target="_blank" rel="noopener">Je veux venir</a>
         </div>
-        <div class="upcoming-card reveal">
+        <div class="upcoming-card reveal" id="event-28">
           <div class="upcoming-date"><span class="day">28</span><span class="month">nov</span></div>
           <div class="upcoming-info">
             <h3>Hot Pilates chez Club Lulu</h3>
@@ -298,7 +352,7 @@
           </div>
           <a href="https://www.helloasso.com/associations/the-girls-table-paris/evenements/girls-activities-hot-pilates" class="btn btn-soft" target="_blank" rel="noopener">Je veux venir</a>
         </div>
-        <div class="upcoming-card reveal">
+        <div class="upcoming-card reveal" id="event-29">
           <div class="upcoming-date"><span class="day">29</span><span class="month">nov</span></div>
           <div class="upcoming-info">
             <h3>Run & Girls</h3>
@@ -395,6 +449,6 @@
   </div>
 </footer>
 
-<script src="script.js?v=20261024"></script>
+<script src="script.js?v=20261024b"></script>
 </body>
 </html>
