@@ -399,32 +399,41 @@ blockquote.testimonial cite {
 /* ---------- Upcoming ---------- */
 .upcoming { background: var(--cream-soft); border-top: 1px solid var(--line); }
 
-.upcoming-list { display: flex; flex-direction: column; gap: 18px; }
+.upcoming-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
 
 .upcoming-card {
-  display: grid;
-  grid-template-columns: 120px 1fr auto;
-  align-items: center;
-  gap: 24px;
+  display: flex;
+  flex-direction: column;
   background: var(--cream-card);
   border: 1px solid var(--line);
   border-radius: 18px;
-  padding: 22px 26px;
+  padding: 26px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-@media (max-width: 720px) {
-  .upcoming-card { grid-template-columns: 1fr; text-align: center; }
+.upcoming-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(42, 26, 26, 0.1);
 }
 
 .upcoming-date {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
   font-family: 'Fraunces', serif;
   color: var(--red);
-  text-align: center;
+  margin-bottom: 16px;
 }
-.upcoming-date .day { font-size: 2.2rem; font-weight: 700; display: block; line-height: 1; }
-.upcoming-date .month { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--red-dark); }
+.upcoming-date .day { font-size: 2rem; font-weight: 700; line-height: 1; }
+.upcoming-date .month { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--red-dark); }
 
-.upcoming-info h3 { margin-bottom: 4px; }
-.upcoming-info .meta { font-size: 0.85rem; color: var(--ink-soft); }
+.upcoming-info { flex: 1; }
+.upcoming-info h3 { margin-bottom: 6px; font-size: 1.15rem; }
+.upcoming-info .meta { font-size: 0.88rem; color: var(--ink-soft); line-height: 1.5; }
+.upcoming-card .btn { margin-top: 20px; align-self: flex-start; }
 .upcoming-info .venue-pending,
 .upcoming-info .price-badge {
   display: inline-flex;
